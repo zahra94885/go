@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	firstName := "zahra"
+	firstName := "man"
 	var lastName string = "moradi"
 
 	fmt.Println(firstName)
@@ -24,7 +24,7 @@ func main() {
 
 	var newByte byte = 'a'
 	fmt.Println(string(newByte))
-	firstName1 := "zahra"
+	firstName1 := "man"
 	lastName1 := "moradi"
 	// fmt.Println(firstName1 + lastName1)
 	fullName := firstName1 + " " + lastName1
