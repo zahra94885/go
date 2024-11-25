@@ -26,10 +26,6 @@ func main() {
 	fmt.Println(string(newByte))
 	firstName1 := "man"
 	lastName1 := "moradi"
-	// fmt.Println(firstName1 + lastName1)
-	fullName := firstName1 + " " + lastName1
-	age := 21
-	fmt.Printf("Hi, my full Name is %v and my age is %v", fullName, age)
+	fmt.Println(firstName1 + lastName1)
 
 }
-
