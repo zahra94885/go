@@ -1,0 +1,23 @@
+package main
+
+import (
+	"log"
+	"net/http"
+
+	"github.com/gofiber/fiber/v2"
+)
+
+func init() {
+	app := fiber.New()
+
+	app.Get("/api/health", func(ctx *fiber.Ctx) error {
+		return ctx.JSON(fiber.Map{
+			"message": "Hello world",
+			"status":  http.StatusOK,
+		})
+	})
+	err := app.Listen(":8000")
+	if err != nil {
+		log.Fatal(err)
+	}
+}
